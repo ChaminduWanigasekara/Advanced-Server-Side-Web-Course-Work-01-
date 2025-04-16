@@ -1,0 +1,26 @@
+{
+  "name": "course-work-01",
+  "version": "1.0.0",
+  "description": "Final Year Web Development Course work",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "node server.js",
+    "client": "cd client && npm start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chamindu Wanigasekara",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.8.4",
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.7",
+    "jsonwebtoken": "^9.0.2",
+    "node-fetch": "^2.7.0",
+    "react-router-dom": "^6.30.0",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
