@@ -1,0 +1,17 @@
+version: '3'
+services:
+  backend:
+    build: .
+    container_name: backend
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+    depends_on:
+      - frontend
+
+  frontend:
+    build: ./client
+    container_name: frontend
+    ports:
+      - "3001:3001"
